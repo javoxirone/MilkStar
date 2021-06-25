@@ -1,0 +1,276 @@
+@import 'mixin.scss';
+@import 'variable.scss';
+
+.header__navbar-top{
+    background-color: $mainColor;
+    padding: 12px 0px;
+    .container{
+        @include flex(flex, space-between, center, $rg: 32px);
+        .navbar__connect{
+            @include flex(flex, center, center, $cg: 32px, $rg: 32px);
+            .navbar__phone, .navbar__email{
+                color: #ffffff;
+                i{
+                    margin-right: 8px;
+                    font-size: 18px;
+                }
+                span{
+                    font-size: 16px;
+                }
+            }
+        }
+        .navbar__social{
+            color: #ffffff;
+            @include flex(flex, center, center, $cg: 24px);
+            text-align: center;
+            .social__networks{
+                @include flex(flex, center, center, $cg: 16px);
+            a{
+                i{
+                    color: #ffffff;
+                    font-size: 18px;
+                }
+            }
+            }
+            
+        }
+    }
+}
+.navbar__lang{
+    a{
+        color: #ffffff;
+    }
+    a.active{
+        font-weight: 700;
+    }
+}
+
+.header__navbar-bottom{
+    padding: 15px 0px;
+    background-color: #ffffff;
+    .container{
+        @include flex(flex, space-between, center);
+        .navbar__menu{
+            @include flex(flex, center, center, $cg: 70px);
+            font-weight: 500;
+            .menu__link.active{
+                font-weight: 600;
+                position: relative;
+                a{
+                    color: $mainColor!important;
+                    &::after{
+                        content: '';
+                        width: 100%;
+                        height: 2px;
+                        background-color: $mainColor;
+                        position: absolute;
+                        bottom: -36px;
+                        left: 0;
+                    }
+                }
+            }
+            .menu__link{
+
+                a{
+                    color: $secondaryColor;
+                    &::after{
+                        content: '';
+                        width: 0%;
+                        height: 2px;
+                        background-color: $mainColor;
+                        position: absolute;
+                        bottom: -33px;
+                        left: 0;
+                        transition: .3s;
+
+                    }
+                }
+                &:hover{
+                        position: relative;
+                    a{
+                        color: $mainColor;
+                        &::after{
+                            content: '';
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .menu__link.active{
+                a{
+                    color: $secondaryColor;
+                    &::after{
+                        content: '';
+                        width: 100%;
+                        height: 2px;
+                        background-color: $mainColor;
+                        position: absolute;
+                        bottom: -33px;
+                        left: 0;
+                        transition: .3s;
+
+                    }
+                }
+            }
+        }
+        .navbar__settings{
+            font-size: 36px;
+            color: $mainColor;
+        }
+    }
+}
+
+
+
+    .header__menu {
+        max-width: 100%;
+        max-height: 100%;
+        padding-top: 10px;
+        font-family: "Poppins", sans-serif;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li {
+                font-size: 16px;
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                a {
+                    text-decoration: none;
+                    color: #2b2b2b;
+                }
+            }
+        }
+    }
+    .header__menu.active {
+        bottom: 0;
+    }
+	
+// Header menu burger
+
+.header__burger {
+    position: relative;
+    display: block;
+    min-width: 24px;
+    min-height: 20px;
+    z-index: 10000;
+    &:before {
+        content: "";
+        min-width: 100%;
+        min-height: 2px;
+        background-color: #2b2b2b;
+        position: absolute;
+        left: 0;
+        top: 1px;
+        transition: all 0.4s ease 0s;
+    }
+    &:after {
+        content: "";
+        min-width: 100%;
+        min-height: 2px;
+        background-color: #2b2b2b;
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        transition: all 0.4s ease 0s;
+    }
+    span {
+        min-width: 100%;
+        min-height: 2px;
+        background-color: #2b2b2b;
+        transition: all 0.4s ease 0s;
+        position: absolute;
+        left: 0;
+        top: 7px;
+    }
+}
+.header__burger.active {
+    span {
+        transition: all 0.4s ease 0s;
+        transform: scale(0);
+        background-color: white;
+    }
+    &:before {
+        transition: all 0.4s ease 0s;
+        transform: rotate(45deg);
+        top: 9px;
+        background-color: white;
+    }
+    &:after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+        transition: all 0.4s ease 0s;
+        background-color: white;
+    }
+}
+
+
+
+.header__menu {
+    position: fixed;
+    z-index: 20;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 56px 80px;
+    background-color: rgba(1, 176, 206, 0.93);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.5s ease;
+    text-align: center;
+    .navbar__lang{
+        color: #ffffff;
+        margin-bottom: 32px;
+
+        a{
+            color: #ffffff;
+        }
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        height: 65%;
+        width: 100%;
+        margin-top: 40px;
+        li {
+            font-size: 24px;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            a {
+                text-decoration: none;
+                color: white;
+                font-family: "Poppins", sans-serif;
+                font-weight: 300;
+            }
+        }
+    }
+    .header__feedback {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        .header__feedback_icons {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 120px;
+            margin-bottom: 20px;
+        }
+        .header__feedback_address {
+            font-family: "Poppins", sans-serif;
+            font-size: 13px;
+            color: white;
+        }
+    }
+}

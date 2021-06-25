@@ -1,0 +1,125 @@
+@import 'header.scss';
+@import 'main.scss';
+@import 'footer.scss';
+@import 'media.scss';
+@import 'variable.scss';
+@import 'mixin.scss';
+@import 'slider.scss';
+
+// nulling the styles
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1320px;
+    width: 100%;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+    &:hover{
+        text-decoration: none;
+        color: #000000;
+    }
+}
+h1{
+    font-size: 64px !important;
+
+}
+
+h3{
+    font-size: 36px !important;
+    color: $secondaryColor;
+}
+h3.section__title{
+    font-size: 48px !important;
+}
+// nulling the styles
+ul{
+    list-style: none;    
+}
+
+// null form elements (inputs, buttons[submit] and others)
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $secondaryColor;
+    opacity: 1; /* Firefox */
+  }
+input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #ffffff!important;
+}
+button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+// main button with background color
+.main-btn{
+    max-width: 250px;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: $mainColor;
+    transition: .3s;
+    border-radius: 50px;
+    font-weight: 700;
+    &:hover{
+        background-color: #108fac;
+        color: #ffffff;
+    }
+}
+
+
+// main button with border
+.main-btn-border{
+    max-width: 150px;
+    padding: 10px 20px;
+    color: $mainColor;
+    border: 3px solid $mainColor;
+    transition: .3s;
+    border-radius: 50px;
+    font-weight: 700;
+    &:hover{
+        background-color: $mainColor;
+        color: #ffffff;
+    }
+}
+
+
+// title settings
+.title{
+    position: absolute;
+    top: -32px;
+    left: 0;
+    .section__title{
+        max-width: 100%;
+        width: 480px;
+        padding: 15px 65px;
+        @include flex(flex, center, center);
+        color: #FFFFFF;
+        background: #1BACCC;
+        border-radius: 0px 0px 50px 0px;
+        position: relative;
+        z-index: 10;
+        text-align: center;
+    }
+    .title__back{
+        max-width: 520px;
+        width: 520px;
+        height: 100px;
+        background-color: #ffffff;
+        border-radius: 0px 0px 50px 0px;
+        position: absolute;
+        top: 32px;
+        left: 0;
+    }
+}

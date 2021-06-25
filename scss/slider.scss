@@ -1,0 +1,131 @@
+@import 'variable.scss';
+@import 'mixin.scss';
+
+
+.slick-slider {
+	min-width: 0;
+}
+.slick-list {
+	overflow: hidden;
+}
+.slick-track {
+	display: flex;
+	align-items: center;
+}
+
+// Home slider
+.slider {
+	position: relative;
+	padding: 0px 60px;
+	.slick-arrow {
+		position: absolute;
+		top: 50%;
+		margin: -30px 0px 0px 0px;
+		z-index: 10;
+		font-size: 0;
+		width: 48px;
+		height: 48px;
+        border: none;
+        cursor: pointer;
+	}
+	.slick-arrow.slick-prev {
+		left: 0;
+		background: url('../img/sl-arrow_l.svg') 0 0 / 100% no-repeat;
+	}
+	.slick-arrow.slick-next {
+		right: 0;
+		background: url('../img/sl-arrow_r.svg') 0 0 / 100% no-repeat;
+	}
+	.slick-arrow.slick-disabled {
+		opacity: 0.2;
+	}
+	.slick-dots {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		li {
+			list-style: none;
+			margin: 0px 10px;
+		}
+		button {
+			font-size: 0;
+			width: 14px;
+			height: 14px;
+			background-color: $mainColor;
+            border: 2px solid $mainColor;
+			border-radius: 50%;
+            cursor: pointer;
+		}
+		li.slick-active {
+			button {
+				background-color: transparent;
+				border: 2px solid $mainColor;
+			}
+		}
+	}
+}
+
+.slider__item {
+	padding: 0px 15px;
+	img {
+		max-width: 100%;
+	}
+}
+@media (max-width:767px) {
+	.slider {
+		padding: 0px 40px;
+	}
+}
+
+
+// Testimonials slider
+.comments-slider {
+	position: relative;
+	padding: 0px 90px;
+	.slick-arrow {
+		position: absolute;
+		top: 50%;
+		margin: -30px 0px 0px 0px;
+		z-index: 10;
+		font-size: 0;
+		width: 48px;
+		height: 48px;
+        border: none;
+        cursor: pointer;
+	}
+	.slick-arrow.slick-prev {
+		left: 0;
+		background: url('../img/sl-arrow_l.svg') 0 0 / 100% no-repeat;
+	}
+	.slick-arrow.slick-next {
+		right: 0;
+		background: url('../img/sl-arrow_r.svg') 0 0 / 100% no-repeat;
+	}
+	.slick-arrow.slick-disabled {
+		opacity: 0.2;
+	}
+	.slick-dots {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		li {
+			list-style: none;
+			margin: 0px 10px;
+		}
+		button {
+			font-size: 0;
+			width: 14px;
+			height: 14px;
+			background-color: $mainColor;
+            border: 2px solid $mainColor;
+			border-radius: 50%;
+            cursor: pointer;
+		}
+		li.slick-active {
+			button {
+				background-color: transparent;
+				border: 2px solid $mainColor;
+			}
+		}
+	}
+}

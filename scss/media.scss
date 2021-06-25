@@ -1,0 +1,227 @@
+@import 'variable.scss';
+@import 'mixin.scss';
+
+// container settins
+@media (max-width: 1200px) {
+    .container{
+        max-width: 970px!important;
+    }
+}
+
+@media (max-width: 992px) {
+    .container{
+        max-width: 750px!important;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container{
+        max-width: none!important;
+    }
+}
+
+
+
+
+// media calling for elements in website
+@media (min-width: 2560px) {
+    .hiw-slider{
+        @include flex(flex, center, center, $fd: column, $fw: wrap, $rg: 32px, $cg: 32px);
+        overflow: visible;
+        height: auto!important;
+    }
+    .item{
+        position: static!important;
+        transform: none!important;
+        max-width: 1320px!important;
+    }
+    .prev, .next{
+        display: none!important;
+    }
+    .hiw-slider{
+        padding: 0px 15px;
+    }
+}
+@media (max-width: 1200px) {
+    .home__title{
+        font-size: 48px !important;
+    }
+    .slick-track{
+        column-gap: 0!important;
+    }
+    .hiw-slider{
+        overflow: visible;
+        @include flex(flex, center, center, $fw: wrap, $rg: 32px);
+        height: auto!important;
+        width: 100%;
+    }
+    .item{
+        position: static!important;
+        transform: none!important;
+    }
+    .prev, .next{
+        display: none!important;
+    }
+    .hiw-slider{
+        padding: 0px 15px;
+    }
+    
+}
+
+
+@media (max-width: 1024px) {
+    section.newsletter{
+        padding: 120px 0px;
+    }
+    .newsletter-card{
+        padding: 40px!important;
+        transform: none!important;
+    }
+    .newsletter__text{
+        @include flex(flex, center!important, center, $fw: wrap!important, $cg: 110px, $rg: 32px!important);
+        text-align: center;
+    }
+    h3.newsletter__title{
+        font-size: 36px !important;
+    }
+    .newsletter__article{
+        font-size: 14px !important;
+    }
+    .newsletter__form{
+        form{
+            input{
+                width: 100%!important;
+            }
+        }
+    } 
+    footer.footer{
+        padding-top: 96px;
+    }
+    .footer__connect{
+        justify-content: flex-start!important;
+    }
+    .footer__links{
+        @include flex(flex, flex-start!important, flex-start, $cg: 140px, $rg: 64px);
+    }
+}
+// Main adaptive code for mobile devices
+@media (max-width: 768px){
+    .navbar__social{
+        margin: 0 auto;
+    }
+    .navbar__connect{
+        margin: 0 auto;
+    }
+    .header__burger {
+        span {
+            display: block;
+        }
+        &:before {
+            display: block;
+        }
+        &:after {
+            display: block;
+        }
+    }
+    .navbar__menu{
+        display: none!important;
+    }
+    .home__content{
+        @include flex(flex!important, center!important, center!important);
+        text-align: center;
+    }
+    section.home{
+        height: 100vh;
+    }
+    .home__img{
+        display: none;
+    }
+    .home__buttons{
+        @include flex(flex!important, center!important, center!important);
+    }
+    .home__title{
+        font-size: 36px!important;
+    }
+    .card{
+        width: 100%!important;
+    }
+    .title{
+        top: 0;
+        .section__title{
+            font-size: 36px !important;
+            
+        }
+        .title__back{
+            display: none;
+        }
+    }
+
+    .item{
+        @include flex(flex, center, center, $fd: column-reverse!important, $rg: 24px!important);
+        text-align: center;
+        padding: 35px!important;
+    }
+    .title{
+        position: static!important;   
+        width: 100%;
+        margin-bottom: 64px;
+    }
+    .section__title{
+        border-radius: 0px!important;
+        width: auto!important;
+    }
+    .faq__item{
+        @include flex(flex, center, center!important, $fd: column!important, $fw: nowrap);
+        text-align: center!important;
+        margin: 0 auto;
+        .faq__item-icon{
+            margin-bottom: 16px!important;
+        }
+    }
+    .comments-slider{
+        .slick-list{
+            .slick-track{
+                column-gap: 0px!important;
+            }
+        }
+    }
+    .comments-slider{
+        padding: 0px 15px!important;
+    }
+    section.testimonials, section.hiw{
+        padding-bottom: 0!important;
+    }
+}
+
+
+// For gallery screen
+@media screen and (max-width: 515px) {
+	.v-stretch {
+		grid-row: span 1;
+	}
+	.h-stretch {
+		grid-column: span 1;
+	}
+	.big-stretch {
+		grid-column: span 1;
+		grid-row: span 1;
+	}
+}
+
+// Home screen background blur
+@media (max-width: 425px) {
+    .home__bg{
+        height: auto!important;
+    }
+    .newsletter-card{
+        padding: 20px!important;
+    }
+    .footer-bottom {
+        .container{
+            padding: 15px!important;
+        }
+    }
+}
+
+

@@ -1,0 +1,94 @@
+@import 'variable.scss';
+@import 'mixin.scss';
+
+
+// Footer part
+
+footer.footer{
+    background-color: $secondaryColor;
+    padding-top: 210px;
+    .container{
+        .footer-top{
+            .footer__connect{
+                @include flex(flex, space-around, center, $cg: 24px, $rg: 32px);
+                .connect__item{
+                    @include flex(flex, center, center, $cg: 24px, $fw: nowrap);
+                    .connect-icon{
+                        width: 76px;
+                        height: 76px;
+                        @include flex(flex, center, center);
+                        border-radius: 50px;
+                        background: rgba(255, 255, 255, 0.25);
+                        i{
+                            color: #ffffff;
+                            font-size: 26px;
+                        }
+                    }
+                    .connect-text{
+                        @include flex(flex, center, flex-start, $fd: column, $rg: 5px);
+                        .connect__title{
+                            font-size: 18px;
+                            color: #FFFFFF;
+                        }
+                        .connect__subtitle{
+                            font-size: 14px;
+                            color: rgba(255, 255, 255, 0.4);
+                        }
+                    }
+                    
+                }
+                &::after{
+                    content: '';
+                    width: 90%;
+                    height: 2px;
+                    background: #FFFFFF;
+                    opacity: 0.1;
+                    border-radius: 2px;
+                    margin: 48px auto;
+                }
+            }
+            .footer__links{
+                @include flex(flex, center, flex-start, $cg: 140px, $rg: 64px);
+                .col{
+                    color: #ffffff;
+                    img{
+                        max-width: 176px;
+                        margin-bottom: 32px;
+                    }
+                    .col__article{
+                        font-size: 14px;
+                        line-height: 200%;
+                        max-width: 425px;
+                    }
+                    .col__title{
+                        margin-bottom: 38px;
+                        font-size: 16px;
+                    }
+                    .col__list{
+                        @include flex(flex, flex-start, flex-start, $fd: column, $rg: 18px);
+                        .list-item{
+                            font-size: 14px;
+                            font-weight: 400;
+                            a{
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom{
+        background-color: #1A2138;
+        margin-top: 96px;
+        .container{
+            @include flex(flex, space-between, center);
+            padding: 24px 64px;
+            span{
+                color: #ffffff;
+                font-size: 14px;
+            }
+        }
+        
+    }
+}
