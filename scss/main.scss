@@ -287,54 +287,43 @@ section.gallery{
     background-color: $sectionBgcolor;
 }
 
-.gallery__borders{
-    position: relative;
-    .gallery__content {
-        padding: 10px;
-        max-width: 1100px;
-        margin: 0 auto;
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-auto-rows: 250px;
-        grid-auto-flow: dense;
-        &::before{
-            content: '';
-            position: absolute;
-            left: 0;
-            height: 100%;
-            width: 5px;
-            background-color: $mainColor;
-            border-radius: 50px;
+.gallery__content{
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 100vh;
+    .box {
+        flex: 1;
+        overflow: hidden;
+        transition: .5s;
+        margin: 0 2%;
+        box-shadow: 0 20px 30px rgba(0,0,0,.1);
+        line-height: 0;
+        border-radius: 15px;
+        >img {
+            width: 200%;
+            height: calc(100% - 10vh);
+            object-fit: cover;
+            transition: .5s;
         }
-        &::after{
-            content: '';
-            position: absolute;
-            right: 0;
-            height: 100%;
-            width: 5px;
+        >span {
+            font-size: 3.8vh;
+            display: block;
+            text-align: center;
+            height: 10vh;
+            line-height: 2.6;
             background-color: $mainColor;
-            border-radius: 50px;
+            color: #ffffff;
         }
-        a {
-            img {
+        &:hover {
+            flex: 1 1 50%;
+            >img {
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
             }
         }
     }
-}
-
-.v-stretch {
-	grid-row: span 2;
-}
-.h-stretch {
-	grid-column: span 2;
-}
-.big-stretch {
-	grid-column: span 2;
-	grid-row: span 2;
 }
 
 // Partners screen
@@ -348,6 +337,9 @@ section.partners{
 
 .partners__content{
     @include flex(flex, space-around, center, $rg: 32px);
+    img{
+        max-width: 250px;
+    }
 }
 
 
@@ -401,5 +393,79 @@ section.partners{
                 cursor: pointer;
             }
         }
+    }
+}
+
+
+// Modal code
+
+
+/* Modal Content */
+/* Add Animation */
+@keyframes "animatetop" {
+	from {
+		top: -300px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+/* The Close Button */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	border: 1px solid #888;
+	width: 80%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s;
+    border-radius: 15px;
+}
+.close {
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	&:hover {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	&:focus {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+	}
+}
+.modal-header {
+	padding: 2px 16px;
+	background-color: $mainColor;
+	color: white;
+}
+.modal-body {
+	padding: 32px;
+    @include flex(flex, flex-start, center, $cg: 32px, $rg: 32px);
+    img{
+        max-width: 250px;
+        border-radius: 15px;
     }
 }

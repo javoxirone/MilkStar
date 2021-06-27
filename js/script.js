@@ -115,7 +115,8 @@ function changeURLLanguage() {
 }
 
 function changeLanguage() {
-    let hash = window.location.hash
+    let hash = window.location.hash,
+        footerLang = document.querySelector('.footer-lang')
     hash = hash.substr(1)
     console.log(hash)
     if (!allLang.includes(hash)) {
@@ -134,6 +135,33 @@ function changeLanguage() {
         }
 
     }
+    footerLang.innerHTML = hash.toUpperCase()
+    
 }
 
 changeLanguage()
+
+
+// Modal code
+
+
+// Get the modal
+let modal = document.querySelector(`.modal${i+1}`),
+    btn = document.querySelectorAll('.box'),
+    span = document.querySelectorAll(".close")
+
+
+for(let i = 0; i < btn.length; i++){
+    btn[i].addEventListener('click', () => {
+        document.querySelector(`.modal${i+1}`).style.display = 'block'
+        console.log(i);
+        
+    })
+    span[i].addEventListener('click', () => {
+        document.querySelector(`.modal${i+1}`).style.display = 'none'
+        console.log(i);
+    })
+    
+}
+
+

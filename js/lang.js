@@ -25,9 +25,9 @@ const langArr = {
         "uz": "Fikrlar"
     },
     "join" : {
-        "en": "JOIN",
-        "ru": "ПРИСОЕДИНИТЬСЯ",
-        "uz": "QO'SHLISH"
+        "en": "Newsletter",
+        "ru": "Заявка",
+        "uz": "So'rovnoma"
     },
     "copyright" : {
         "en": "© 2020 MilkStar. Made With Love by JavoxirOne",
@@ -55,9 +55,9 @@ const langArr = {
         "uz": "Fikrlar"
     },
     "join-a" : {
-        "en": "JOIN",
-        "ru": "ПРИСОЕДИНИТЬСЯ",
-        "uz": "QO'SHLISH"
+        "en": "Newsletter",
+        "ru": "Заявка",
+        "uz": "So'rovnoma"
     },
     "hiw-b" : {
         "en": "How it works",
@@ -137,7 +137,7 @@ const langArr = {
     "questions-title" : {
         "en": "Frequently Asked Questions",
         "ru": "Часто задаваемые вопросы",
-        "uz": "tez-tez so'raladigan savollar"
+        "uz": "Tez-tez so'raladigan savollar"
     },
     "question-1" : {
         "en": "How is the purchase of goods?",
@@ -215,9 +215,9 @@ const langArr = {
         "uz": "Fikrlar"
     },
     "join-c" : {
-        "en": "JOIN",
-        "ru": "ПРИСОЕДИНИТЬСЯ",
-        "uz": "QO'SHLISH"
+        "en": "Newsletter",
+        "ru": "Заявка",
+        "uz": "So'rovnoma"
     },
     "learn-grow" : {
         "en": "Learn & Grow",
@@ -248,6 +248,59 @@ const langArr = {
         "en": "Reach us",
         "ru": "Связаться с нами",
         "uz": "Biz bilan bog'laning"
+    },
+    "cows" : {
+        "en": "Cows",
+        "ru": "Коровы",
+        "uz": "Sigirlar"
+    }
+    ,
+    "cows-a" : {
+        "en": "Cows",
+        "ru": "Коровы",
+        "uz": "Sigirlar"
+    },
+    "machines" : {
+        "en": "Machines",
+        "ru": "Машины",
+        "uz": "Uskunalar"
+    }
+    ,
+    "machines-a" : {
+        "en": "Machines",
+        "ru": "Доительные машины",
+        "uz": "Sog'uvchi uskunalar"
+    },
+    "place" : {
+        "en": "Place",
+        "ru": "Место",
+        "uz": "Joy"
+    },
+    "place-a" : {
+        "en": "Place",
+        "ru": "Место",
+        "uz": "Joy"
+    },
+    "work-place" : {
+        "en": "Work place",
+        "ru": "Рабочее место",
+        "uz": "Ishlash joyi"
+    }
+    ,
+    "work-place-a" : {
+        "en": "Work place",
+        "ru": "Рабочее место",
+        "uz": "Ishlash joyi"
+    },
+    "footer-copyright" : {
+        "en": "2021 Milk Star. All Right Reserved",
+        "ru": "2021 Milk Star. Все права защищены",
+        "uz": "2021 Milk Star. Barcha huquqlar himoyalangan"
+    },
+    "location" : {
+        "en": "Tashkent region, Zangiota district, Erkin KFY, M-39",
+        "ru": "Ташкентская область, Зангиотинский район, Эркинский KFY, М-39",
+        "uz": "Toshkent viloyati, Zangiota tumani, Erkin KFY, M-39"
     }
 
     
