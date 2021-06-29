@@ -260,6 +260,10 @@ section.testimonials{
     .comment__autor{
         font-weight: 600;
         font-size: 18px;
+        i{
+            font-size: 14px;
+            font-weight: 400;
+        }
     }
     &:hover{
         background-color: $mainColor;

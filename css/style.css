@@ -918,6 +918,10 @@ section.testimonials {
   font-weight: 600;
   font-size: 18px;
 }
+.comment__item .comment__autor i {
+  font-size: 14px;
+  font-weight: 400;
+}
 .comment__item:hover {
   background-color: #1BACCC;
   color: #FFFFFF !important;
@@ -2035,6 +2039,10 @@ footer.footer .footer-bottom .container span {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .container {

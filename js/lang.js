@@ -140,24 +140,24 @@ const langArr = {
         "uz": "Tez-tez so'raladigan savollar"
     },
     "question-1" : {
-        "en": "How is the purchase of goods?",
-        "ru": "Как происходит покупка товара?",
-        "uz": "Tovarlarni sotib olish qanday?"
+        "en": "What is your main task?",
+        "ru": "Какова ваша главная задача?",
+        "uz": "Sizlarning asosiy maqsadingiz nima?"
     },
     "question-2" : {
-        "en": "Is there a delivery of the goods?",
-        "ru": "Есть ли доставка товара?",
-        "uz": "Tovarlar etkazib beriladimi?"
+        "en": "What do you produce?",
+        "ru": "Что вы производите?",
+        "uz": "Sizlar nima ishlab chiqarasizlar?"
     },
     "question-3" : {
-        "en": "Is there a loan for the product?",
-        "ru": "Есть ли кредит на продукт?",
-        "uz": "Mahsulot uchun kredit bormi?"
+        "en": "What is your main mission?",
+        "ru": "Какая у вас основная миссия?",
+        "uz": "Sizlarning asosiy vazifangiz nima?"
     },
     "question-4" : {
-        "en": "Is there a concession if I buy a lot of items?",
-        "ru": "Есть ли скидка, если я куплю много вещей?",
-        "uz": "Ko'p narsalarni sotib olsam, imtiyoz bormi?"
+        "en": "In which countries can you provide services?",
+        "ru": "В каких странах вы можете предоставить услуги?",
+        "uz": "Qaysi mamlakatlarda xizmat ko'rsatishingiz mumkin?"
     },
     "newsletter" : {
         "en": "Newsletter",
@@ -301,7 +301,61 @@ const langArr = {
         "en": "Tashkent region, Zangiota district, Erkin KFY, M-39",
         "ru": "Ташкентская область, Зангиотинский район, Эркинский KFY, М-39",
         "uz": "Toshkent viloyati, Zangiota tumani, Erkin KFY, M-39"
+    },
+    "article-1" : {
+        "en": "As MilkStar we know our farmers and their needs. <br />Quality machines are in MilkStar",
+        "ru": "Как MilkStar мы знаем наших фермеров и их потребности. <br /> Качественные машины в MilkStar",
+        "uz": "MilkStar sifatida biz dehqonlarimizni va ularning ehtiyojlarini bilamiz. <br /> Sifatli mashinalar MilkStar-da"
+    },
+    "article-2" : {
+        "en": "MilkStar is quality and fast milking. Milking systems for every budget",
+        "ru": "MilkStar - это качественное и быстрое доение. Доильные системы на любой бюджет",
+        "uz": "MilkStar sifatli va tez sog'iladi. Har qanday byudjet uchun sog'ish tizimlari"
+    },
+    "service-1" : {
+        "en": "MilkStar meets the needs and expectations of its customers and achieves 100% satisfaction.",
+        "ru": "MilkStar удовлетворяет потребности и ожидания своих клиентов и достигает 100% удовлетворения.",
+        "uz": "MilkStar mijozlarining talablari va umidlarini qondiradi va 100% qoniqish hosil qiladi."
+    },
+    "service-2" : {
+        "en": "As an innovative company, Markim uses the latest technological systems in production.",
+        "ru": "Как инновационная компания Markim использует в производстве новейшие технологические системы.",
+        "uz": "Markim innovatsion kompaniya sifatida ishlab chiqarishda eng yangi texnologik tizimlardan foydalanadi."
+    },
+    "service-3" : {
+        "en": "MilkStar uses the most modern equipment for the production and assembly of the manufactured machines.",
+        "ru": "MilkStar использует самое современное оборудование для производства и сборки выпускаемых машин.",
+        "uz": "MilkStar ishlab chiqarilgan mashinalarni ishlab chiqarish va yig'ish uchun eng zamonaviy uskunalardan foydalanadi."
+    },
+    "answer-1" : {
+        "en": "We design and implement new investments that are profitable, sustainable and in line with growth goals, and then we make sure to provide them with the support they need.",
+        "ru": "Мы разрабатываем и внедряем новые инвестиции, которые являются прибыльными, устойчивыми и соответствующими целям роста, а затем обеспечиваем им необходимую поддержку.",
+        "uz": "Biz foydali, barqaror va o'sish maqsadlariga mos keladigan yangi investitsiyalarni ishlab chiqamiz va amalga oshiramiz, so'ngra ularni kerakli ko'mak bilan ta'minlaymiz."
+    },
+    "answer-2" : {
+        "en": "With production machines we manufacture: Milking systems; Farm machinery; Farms control devices up to fertilizers; We provide farmers with the latest technology solutions related to animal husbandry.",
+        "ru": "С помощью производственного оборудования мы производим: доильные системы; Сельскохозяйственная техника; Устройства управления хозяйством вплоть до удобрений; Мы предоставляем фермерам новейшие технологические решения, связанные с животноводством.",
+        "uz": "Ishlab chiqarish mashinalari bilan biz quyidagilarni ishlab chiqaramiz: Sog'ish tizimlari; Qishloq xo'jaligi texnikasi; Fermer xo'jaliklari o'g'itlargacha qurilmalarni boshqaradi; Biz fermerlarga chorvachilik bilan bog'liq eng yangi texnologik echimlarni taqdim etamiz."
+    },
+    "answer-3" : {
+        "en": "Our main mission is to increase production with the projects, solutions, machines and equipment that we offer to farmers and provide added value to what they produce.",
+        "ru": "Наша основная миссия - увеличить производство с помощью проектов, решений, машин и оборудования, которые мы предлагаем фермерам, и обеспечить добавленную стоимость тому, что они производят.",
+        "uz": "Bizning asosiy vazifamiz - fermerlarga taqdim etayotgan loyihalar, echimlar, mashinalar va uskunalar bilan ishlab chiqarishni ko'paytirish va ular ishlab chiqarayotgan narsalarga qo'shimcha qiymat berishdir."
+    },
+    "answer-4" : {
+        "en": "Our services are performed by our technical staff in many countries such as Turkey, Azerbaijan, Netherlands, Germany, Turkmenistan, Kazakhstan",
+        "ru": "Наши услуги выполняются нашим техническим персоналом во многих странах, таких как Турция, Азербайджан, Нидерланды, Германия, Туркменистан, Казахстан.",
+        "uz": "Bizning xizmatlarimiz texnik xodimlarimiz tomonidan Turkiya, Ozarbayjon, Gollandiya, Germaniya, Turkmaniston, Qozog'iston kabi ko'plab mamlakatlarda amalga oshiriladi."
+    },
+    "newsletter-article" : {
+        "en": "Sign up for industry alerts, our latest news, thoughts, and insights from MilkStar. Our company provides consulting, machinery manufacturing and installation services for the preparation of fertilizer management systems.",
+        "ru": "Подпишитесь на отраслевые уведомления, наши последние новости, мысли и идеи от MilkStar. Наша компания предоставляет консультации, производство оборудования и услуги по установке для подготовки систем управления удобрениями.",
+        "uz": "MilkStar-dan sanoat ogohlantirishlari, so'nggi yangiliklar, fikrlar va tushunchalar uchun ro'yxatdan o'ting. Kompaniyamiz o'g'itlarni boshqarish tizimini tayyorlash bo'yicha konsalting, mashinasozlik ishlab chiqarish va montaj xizmatlarini taqdim etadi."
+    },
+    "footer-article" : {
+        "en": "Our company provides consulting, machinery manufacturing and installation services for the preparation of fertilizer management systems.",
+        "ru": "Наша компания предоставляет консультации, производство оборудования и услуги по установке для подготовки систем управления удобрениями.",
+        "uz": "Kompaniyamiz o'g'itlarni boshqarish tizimini tayyorlash bo'yicha konsalting, mashinasozlik ishlab chiqarish va montaj xizmatlarini taqdim etadi."
     }
-
     
 }
