@@ -171,7 +171,7 @@ $(document).ready(function() {
     setTimeout(function(){
         $('.preloader').addClass('loaded');
         $('.preloader').css('z-index', '-1');
-        $('body').css('overflow', 'scroll');        
+        $('body').css('overflow-y', 'scroll');
     }, 3000);
  
 });
