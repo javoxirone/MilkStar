@@ -172,6 +172,6 @@ $(document).ready(function() {
         $('.preloader').addClass('loaded');
         $('.preloader').css('z-index', '-1');
         $('body').css('overflow-y', 'scroll');
-    }, 3000);
+    }, 2000);
  
 });

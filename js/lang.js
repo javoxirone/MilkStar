@@ -75,9 +75,9 @@ const langArr = {
         "uz": "Fikrlar"
     },
     "home-title" : {
-        "en": "The best dairy machines in Uzbekistan",
-        "ru": "Лучшие молочные машины в Узбекистане",
-        "uz": "O'zbekistondagi eng yaxshi sog'uvchi mashinalar"
+        "en": "MilkStar has a wide range of milking systems",
+        "ru": "MilkStar предлагает широкий выбор доильных систем.",
+        "uz": "MilkStar sog'ish tizimlarining keng assortimentiga ega"
     },
     "btn-main" : {
         "en": "Join With Us!",
@@ -100,9 +100,9 @@ const langArr = {
         "uz": "Buyurtma Berish!"
     },
     "home-title-2" : {
-        "en": "Fast delivery of goods<br /> to your address",
-        "ru": "Быстрая доставка товара по вашему адресу",
-        "uz": "Tovarlarni manzilingizga tez yetkazib berish"
+        "en": "With MilkStar high quality, high efficiency",
+        "ru": "С MilkStar высокое качество, высокая эффективность",
+        "uz": "MilkStar bilan yuqori sifatli, yuqori samaradorlik"
     },
     "farms" : {
         "en": "Quality Farms",
