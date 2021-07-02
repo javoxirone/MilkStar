@@ -167,10 +167,11 @@ for(let i = 0; i < btn.length; i++){
 // Preloader animation
 
 $(document).ready(function() {
- 
+    $('body').css('overflow', 'hidden');
     setTimeout(function(){
         $('.preloader').addClass('loaded');
         $('.preloader').css('z-index', '-1');
+        $('body').css('overflow', 'scroll');        
     }, 3000);
  
 });
