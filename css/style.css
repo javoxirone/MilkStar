@@ -1844,6 +1844,13 @@ footer.footer .footer-bottom .container span {
   .preloader__content img {
     max-width: 200px !important;
   }
+
+  .modal-body {
+    margin: 0 !important;
+  }
+  .modal-body img {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 515px) {
   .v-stretch {
