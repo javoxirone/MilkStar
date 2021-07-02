@@ -1,5 +1,6 @@
-let burger = document.querySelector('.header__burger')
-let menu = document.querySelector('.header__menu')
+//  Adaptive burger code
+let burger = document.querySelector('.header__burger'),
+    menu = document.querySelector('.header__menu')
 
 burger.addEventListener('click', () => {
     burger.classList.toggle('active')
@@ -7,66 +8,7 @@ burger.addEventListener('click', () => {
 
 })
 
-
-$(document).ready(function(){
-	$('.slider').slick({
-		arrows:true,
-		dots:true,
-		slidesToShow:1,
-		autoplay:true,
-		speed:1000,
-		autoplaySpeed:3000,
-        fade: true,
-		responsive:[
-			{
-				breakpoint: 768,
-				settings: {
-					slidesToShow:1
-				}
-			},
-			{
-				breakpoint: 550,
-				settings: {
-					slidesToShow:1
-				}
-			}
-		]
-	});
-
-    $('.comments-slider').slick({
-		arrows:false,
-		dots:false,
-		slidesToShow: 3,
-        slidesToScroll: 1,
-        Infinite: true,
-        centerMode: false,
-		autoplay:true,
-		speed:1000,
-		autoplaySpeed:3000,
-		responsive:[
-			{
-				breakpoint: 1200,
-				settings: {
-					slidesToShow: 2,
-                    slidesToScroll: 1,
-                    centerMode: false,
-				}
-			},
-			{
-				breakpoint: 768,
-				settings: {
-					slidesToShow:1,
-                    slidesToScroll: 1,
-                    centerMode: true,
-					fade: true
-				}
-			}
-		]
-	});
-});
-
-
-
+// Testimonials code
 let prev = document.querySelector('.prev'),
     next = document.querySelector('.next'),
     item1 = document.querySelector('.item-1'),
@@ -102,7 +44,7 @@ prev.addEventListener('click', () => {
 
 
 
-// Multi language
+// Multi language code
 let select = document.querySelector('select'),
 	allLang = ['en', 'ru', 'uz']
 select.addEventListener('change', changeURLLanguage)
@@ -143,9 +85,6 @@ changeLanguage()
 
 
 // Modal code
-
-
-// Get the modal
 let modal = document.querySelector(`.modal${i+1}`),
     btn = document.querySelectorAll('.box'),
     span = document.querySelectorAll(".close")
@@ -163,15 +102,3 @@ for(let i = 0; i < btn.length; i++){
     })
     
 }
-
-// Preloader animation
-
-$(document).ready(function() {
-    $('body').css('overflow', 'hidden');
-    setTimeout(function(){
-        $('.preloader').addClass('loaded');
-        $('.preloader').css('z-index', '-1');
-        $('body').css('overflow-y', 'scroll');
-    }, 2000);
- 
-});
